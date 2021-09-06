@@ -1,3 +1,5 @@
+// // Tanpa Callback
+
 // const orderCoffe = () => {
 //   let coffee = null;
 //   console.log("sedang membuat kopi, silakan tunggu...");
@@ -7,14 +9,17 @@
 //   return coffee;
 // };
 
-// const coffee = orderCoffe();
-// console.log(coffee);
+// with Callback
 
-const orderCoffe = (callback) => {
+const orderCoffee = (callback) => {
   let coffee = null;
   console.log("Sedang membuat kopi, silakan tunggu...");
   setTimeout(() => {
-    coffee = "Kopi sudah jadi";
+    coffee = "Kopi sudah jadi!";
     callback(coffee);
   }, 3000);
 };
+
+orderCoffee((coffee) => {
+  console.log(coffee);
+});

@@ -22,23 +22,24 @@ function introduce({ displayName, fullName }) {
 // console.log(introduce(user));
 
 // Default Parameters
-function exponentsFormula(baseNumber, exponent = 2)//nilai default 2
- {
+function exponentsFormula(baseNumber, exponent = 2) {
+  //nilai default 2
   let result = baseNumber ** exponent;
   console.log(`${baseNumber}^${exponent} = ${result}`);
 }
 // exponentsFormula(2); // Hanya menggunakan 1 argument jadi params ke-2 undeifined
 
-// Rest Parameter 
-function sum(...numbers){
-    let result = 0;
-    for (let number of numbers){
-        result += number;
-    }
-    return result;
+// Rest Parameter
+function sum(...numbers) {
+  let result = 0;
+  for (let number of numbers) {
+    result += number;
+  }
+  return result;
 }
 
-console.log(sum(1,2,4));
+console.log(sum(1, 2, 4));
 
 // Test
+
 // console.log(greeting("andi"));
